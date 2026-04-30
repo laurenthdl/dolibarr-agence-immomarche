@@ -15,8 +15,8 @@ CREATE TABLE IF NOT EXISTS llx_immo_vente_comp (
     source varchar(255), -- site, notaire, etc.
     fk_user_creat integer,
     fk_user_modif integer,
-    tms timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    date_creation datetime DEFAULT CURRENT_TIMESTAMP
+    tms timestamp DEFAULT CURRENT_TIMESTAMP,
+    date_creation timestamp DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Locations comparables
@@ -36,6 +36,6 @@ CREATE TABLE IF NOT EXISTS llx_immo_location_comp (
     source varchar(255),
     fk_user_creat integer,
     fk_user_modif integer,
-    tms timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    date_creation datetime DEFAULT CURRENT_TIMESTAMP
+    tms timestamp DEFAULT CURRENT_TIMESTAMP,
+    date_creation timestamp DEFAULT CURRENT_TIMESTAMP
 );
