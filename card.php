@@ -16,7 +16,7 @@ if ($action === 'update' && $id > 0 && $object->fetch($id) > 0) {
 }
 if ($id > 0) $object->fetch($id);
 $title = ($action === 'create') ? 'Nouveau' : (($action === 'edit') ? 'Modifier' : 'Fiche');
-llyHeader('', $title); print load_fiche_titre($title, '', 'company.png');
+llxHeader('', $title); print load_fiche_titre($title, '', 'company.png');
 if ($action === 'create' || $action === 'edit') {
     print '<form method="POST"><input type="hidden" name="token" value="' . newToken() . '">';
     if ($action === 'edit') print '<input type="hidden" name="id" value="' . $id . '">';

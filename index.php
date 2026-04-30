@@ -9,7 +9,7 @@ if ($action === 'delete' && $id > 0) {
     if ($object->fetch($id) > 0) { $object->delete($user); setEventMessages('Supprime', null, 'mesgs'); }
     header("Location: " . $_SERVER["PHP_SELF"]); exit;
 }
-llyHeader('', 'Etude de marche');
+llxHeader('', 'Etude de marche');
 print load_fiche_titre('Etude de marche', '', 'company.png');
 print '<div class="tabsAction"><a class="butAction" href="card.php?action=create">Nouveau</a></div><br>';
 $sql = "SELECT rowid, ref, label, description, status FROM " . $db->prefix() . "immo_marche_comparable ORDER BY datec DESC";
